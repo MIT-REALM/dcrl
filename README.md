@@ -43,6 +43,6 @@ python examples/FILE --mode test --constrained 1 --output OUTPUT_DIR --weights W
 The `WEIGHTS_PATH` points to the weight files saved in `OUTPUT_DIR/weights` during training. For example, if we run the training of autonomous electric vehicle routing, the weight file can be `OUTPUT_DIR/weights/ddpg_aev_50.h5f`.
 
 To test all the weights in the output foloer, run:
-``bash
+```bash
 python examples/FILE --mode test_all --constrained 1 --output OUTPUT_DIR --weights OUTPUT_DIR/weights
 ```
