@@ -1,0 +1,6 @@
+__pycache__
+temp*
+test*
+output*
+.ipynb*
+.vscode
