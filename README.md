@@ -2,7 +2,7 @@
 
 The repository constains an official implementation of **Density Constrained Reinforcement Learning**.
 
-### Install
+## Install
 Clone this repository
 ```bash
 git clone https://github.com/Zengyi-Qin/dcrl.git
