@@ -181,8 +181,6 @@ class FarmEnv(Env):
             if np.sum(density_min) == 0:
                 return reward + density_cost * lagrange_max
             return reward + density_reward * lagrange_min + density_cost * lagrange_max
-        elif self.constrained == 2:
-            return reward + density_reward * 2 + density_cost * 6
         else:
             raise NotImplementedError
 
@@ -194,8 +192,6 @@ class FarmEnv(Env):
                 int(velocity * self.VELOCITY_GRID_NUM / self.MAX_SPEED),
                 0, self.VELOCITY_GRID_NUM - 1)
             return reward + self.velocity_lagrange_prev[velocity_index]
-        elif self.constrained == 2:
-            return reward + self._rcpo_velocity_reward(velocity)
         else:
             raise NotImplementedError
 
