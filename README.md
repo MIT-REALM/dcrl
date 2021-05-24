@@ -34,7 +34,7 @@ python examples/FILE --mode train --constrained 1 --output OUTPUT_DIR
 | Agricultural pesticide spraying drone |     ddpg_farm.py    |
 | Direct current series motor control   |    ddpg_motor.py    |
 
-The `--constrained` flag has three options. 0 for no constraint, 1 for the proposed DCRL approach and 2 for the RCPO approach.
+The `--constrained` flag has two options. 0 for no constraint and 1 for the proposed DCRL approach.
 
 ## Testing
 ```bash
