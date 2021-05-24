@@ -112,8 +112,6 @@ class EnergyWrapper(Wrapper):
             pass 
         elif self._constrained == 1:
             reward = reward + lagrange_multiplier
-        elif self._constrained == 2:
-            reward = reward + self._rcpo_reward_function(energy)
         elif self._constrained == 0:
             pass
         else:
@@ -199,9 +197,6 @@ class EnergyWrapper(Wrapper):
             if self._constrained == 1:
                 reload_lagrange = self._reload_lagrange_prev[reload_index]
                 reward = reward + reload_lagrange * reloaded
-            elif self._constrained == 2:
-                reload_add = self._rcpo_reload_reward_function(x, y, reloaded)
-                reward = reward + reload_add * reloaded
         return reward
 
     def _update_reload_density(self, update_ratio=0.5):
