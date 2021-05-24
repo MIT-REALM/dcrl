@@ -1,6 +1,6 @@
 # Density Constrained Reinforcement Learning
 
-The repository constains an official implementation of **Density Constrained Reinforcement Learning**.
+The repository constains an implementation of **Density Constrained Reinforcement Learning** accepted by ICML 2021.
 
 ## Install
 Clone this repository
