@@ -1,7 +1,3 @@
-"""Run this file from within the 'examples' folder:
->> cd examples
->> python ddpg_series_omega_control.py
-"""
 from keras.models import Sequential, Model
 from keras.layers import Dense, Flatten, Input, Concatenate
 from keras.optimizers import Adam
